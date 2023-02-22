@@ -233,10 +233,10 @@ spec:
           resources: {}
           volumeMounts:
             - mountPath: /hadoop/dfs/data
-              name: hadoop-datanode
+              name: hadoop-datanode2
       restartPolicy: Always
       volumes:
-        - name: hadoop-datanode
+        - name: hadoop-datanode2
           persistentVolumeClaim:
-            claimName: hadoop-datanode
+            claimName: hadoop-datanode2
 status: {}
